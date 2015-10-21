@@ -1,0 +1,79 @@
+# Changelog #
+
+```
+v0.9 -> 
+
+   Added:    - New rules: 
+                    - scan keep/remove
+             - New toolbar icon
+             - Fix for typos and rare crash
+
+
+v0.8 -> 
+
+   Added:    - New rules: 
+                    - pagesize keep/remove largest/smallet
+             - Comics with different formats will not be duppes
+
+
+v0.7 -> 
+
+   Added:    - New rules: 
+                    - pagecount remove largest
+                    - pagecount remove smallest
+                    - filesize remove largest
+		    - filesize remove smallest
+             - Now it copies some comic information from deleted comics. It is disabled per default. 
+               Enable in constants.py : UPDATEINFO
+             - Fix for series with multiple volumes
+
+
+v0.6 -> New Features Release
+
+   Added:    - New parser (texts with more than one word can be surrounded by "
+             - Percentage option to filesize keep/remove
+             - Added percentage option to pagecount keep/remove largest/smallest
+             - Added keep first (to remove remaining identical files)
+             - Allow filter multiple words (using any of then) in texts
+
+
+v0.5 -> 
+
+   Fixed:   - Major bug found in the 'text' rules!!!!!
+
+   Changed: - 'pagecount keep noads' now skips comics with COVERPAGES or less pages
+	    - Added "@ OPTION VALUE" to the rules.dat file
+	    - Added new options:
+		    - COVERPAGES (int)
+		    - SIZEMARGIN (int)     (part of issue 9, still not operative)
+            - Allow more than one word as part of the text based rules (issue 8)	
+
+
+v0.4 -> Bug fix Release
+
+   Fixed:   - Issue 7 finally solved (I hope!)
+	    - Issue 6 finally solved (I hope!)
+	    - Correctly changed version number in Package.ini
+
+
+v0.3 -> Bug fix Release
+	
+   Fixed:   - Doesn't break Series info Panel (issue 6) anymore
+
+	    - Threw and exception when there were no dupes (issue 4)
+
+
+   Changed: - Remove leading 0's in comic number to improve duplicate discovery
+
+            - 'pagecount remove fileless' will remove all fileless dupes but one when
+		a group of only fileless is found. One with thumbnail will be kept
+		(issue 7)
+
+
+v0.2 -> Bug fix Release
+
+	Fixed: 	- Rules '[text] remove word' is now correctly parsed.
+
+v0.1 -> Initial Release
+
+```
